@@ -44,6 +44,7 @@ const { withAuth } = createAuth({
 
 export default withAuth(
   config({
+    // @ts-ignore
     server: {
       cors: {
         origin: [process.env.FRONTEND_URL],
