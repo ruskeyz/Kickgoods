@@ -19,8 +19,7 @@ import { extendGraphqlSchema } from './mutations';
 
 function check(name: string) {}
 
-const databaseURL =
-  process.env.DATABASE_URL || 'mongodb://localhost/keystone-sick-fits-tutorial';
+const databaseURL = process.env.DATABASE_URL;
 
 const sessionConfig = {
   maxAge: 60 * 60 * 24 * 360, // How long they stay signed in?

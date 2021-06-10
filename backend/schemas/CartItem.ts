@@ -1,6 +1,6 @@
-import { integer, relationship, select, text } from '@keystone-next/fields';
+import { integer, select, text, relationship } from '@keystone-next/fields';
 import { list } from '@keystone-next/keystone/schema';
-import { isSignedIn, rules } from '../access';
+import { rules, isSignedIn } from '../access';
 
 export const CartItem = list({
   access: {
@@ -15,7 +15,7 @@ export const CartItem = list({
     },
   },
   fields: {
-    // TODO: custom label in here
+    // TODO: Custom Label in here
     quantity: integer({
       defaultValue: 1,
       isRequired: true,

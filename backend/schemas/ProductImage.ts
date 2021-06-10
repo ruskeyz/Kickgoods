@@ -1,7 +1,7 @@
+import 'dotenv/config';
 import { relationship, text } from '@keystone-next/fields';
 import { list } from '@keystone-next/keystone/schema';
 import { cloudinaryImage } from '@keystone-next/cloudinary';
-import 'dotenv/config';
 import { isSignedIn, permissions } from '../access';
 
 export const cloudinary = {
@@ -10,6 +10,7 @@ export const cloudinary = {
   apiSecret: process.env.CLOUDINARY_SECRET,
   folder: 'kickgoods',
 };
+
 export const ProductImage = list({
   access: {
     create: isSignedIn,

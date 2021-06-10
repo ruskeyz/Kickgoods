@@ -1,8 +1,8 @@
 import {
   integer,
-  relationship,
   select,
   text,
+  relationship,
   virtual,
 } from '@keystone-next/fields';
 import { list } from '@keystone-next/keystone/schema';
