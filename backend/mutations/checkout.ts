@@ -1,11 +1,11 @@
-/* eslint-disable */
-import { KeystoneContext, SessionStore } from '@keystone-next/types';
+import { KeystoneContext } from '@keystone-next/types';
 
 import {
   CartItemCreateInput,
   OrderCreateInput,
 } from '../.keystone/schema-types';
 import stripeConfig from '../lib/stripe';
+
 const graphql = String.raw;
 interface Arguments {
   token: string;
