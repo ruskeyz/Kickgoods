@@ -7,3 +7,10 @@ Regards
 https://www.kickgoods.store
 
 ![Screenshot 2021-06-14 at 13 21 53](https://user-images.githubusercontent.com/64967264/121877701-91da2f00-cd13-11eb-8f4c-c2bb94a66775.png)
+
+
+Playground: 
+open frontend and backend separately, run npm i, then npm run dev.
+
+Playground for graphql queries:
+http://localhost:3000/api/graphql
